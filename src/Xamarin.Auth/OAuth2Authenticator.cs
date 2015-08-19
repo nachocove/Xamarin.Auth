@@ -87,6 +87,15 @@ namespace Xamarin.Auth
 			get { return this.accessTokenUrl; }
 		}
 
+        /// <summary>
+        /// Gets the request state.
+        /// </summary>
+        /// <value>The request state is used to check for possible forgeries.</value>
+        public string RequestState
+        {
+            get { return this.requestState; }
+        }
+
 		/// <summary>
 		/// Initializes a new <see cref="Xamarin.Auth.OAuth2Authenticator"/>
 		/// that authenticates using implicit granting (token).
